@@ -181,9 +181,9 @@ ol {
     margin-left: auto;
     align-items: center;
 } */
-.current {
+/* .current {
     color: var(--accent-color);
-}
+} */
 
 /* .contacts .contacts__item:not(:last-child) {
     margin-right: 50px;
@@ -208,7 +208,7 @@ ol {
     fill: var(--accent-color);
 } */
 /* HERO!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.hero {
+/* .hero {
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
@@ -222,14 +222,13 @@ ol {
     text-align: center;
     padding: 200px 0;
 }
-.main-title {
+.hero__title {
     margin: 0 auto;
     max-width: 650px;
 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--title-color);
@@ -240,8 +239,6 @@ ol {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-btn-color);
     background-color: var(--background-primary-btn);
@@ -252,26 +249,26 @@ ol {
 .primary-btn:hover {
     background-color: var(--add-accent-color);
     border-radius: 4px;
-}
+} */
 
 /* FEATURE!!!!!!!!!!!!!!!!!!!!!!!! */
-.features {
+/* .features {
     padding-bottom: 0;
 }
-.feature-list {
+.features__list {
     display: flex;
 }
-.feature-list .feature-item:not(:last-child) {
+.features__list .features__item:not(:last-child) {
     margin-right: 30px;
 }
-.feature-title {
+.features__title {
     margin-bottom: 10px;
     color: var(--second-title-color);
 }
-.feature-item {
+.features__item {
     width: 270px;
 }
-.icon-feature {
+.features__box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,7 +277,7 @@ ol {
     height: 120px;
     background: var(--background-section);
     border-radius: 4px;
-}
+} */
 /* WORK!!!!!!!!!!!!!!!!! */
 .work-link {
     display: block;
