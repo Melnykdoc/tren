@@ -279,11 +279,11 @@ ol {
     border-radius: 4px;
 } */
 /* WORK!!!!!!!!!!!!!!!!! */
-.work-link {
+.work__link {
     display: block;
     position: relative;
 }
-.work-text {
+.work__text {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -295,10 +295,10 @@ ol {
     color: var(--title-color);
 }
 
-.work-list {
+.work {
     display: flex;
 }
-.work-list .work-item:not(:last-child) {
+.work .work__item:not(:last-child) {
     margin-right: 30px;
 }
 
