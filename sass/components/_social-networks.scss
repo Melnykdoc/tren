@@ -1,0 +1,21 @@
+.social {
+    display: flex;
+    .social__item:last-child & {
+        margin-right: 0;
+    }
+}
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+.social__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border: 1px;
+    border-radius: 50%;
+    @include transition((background-color, fill));
+    &:hover {
+        border-radius: 50%;
+        background-color: var(--accent-color);
+    }
+}

@@ -1,0 +1,107 @@
+.footer {
+    background-color: var(--background-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address__list {
+    color: var(--contacts-color);
+    margin-top: 20px;
+    & .address__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+.address__accent {
+    color: var(--address-color);
+}
+
+.address__link {
+    font-style: normal;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .address__list &:focus,
+    .address__list &:hover {
+        color: var(--address-color);
+    }
+}
+.footer__join {
+    align-items: baseline;
+    display: flex;
+}
+.join {
+    margin-left: 70px;
+    margin-right: 93px;
+    &__title {
+        margin-bottom: 20px;
+        color: var(--title-color);
+    }
+}
+
+.join__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
+}
+.join__icon {
+    fill: currentColor;
+    fill: var(--primary-btn-color);
+    &:hover,
+    &:focus {
+        fill: var(--primary-btn-color);
+    }
+}
+.form {
+    display: flex;
+}
+.subs__title {
+    margin-bottom: 20px;
+    color: var(--title-color);
+}
+.form__mail {
+    width: 358px;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-right: 12px;
+    background-color: var(--background-footer);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--title-color);
+    &::placeholder {
+        @include font(400, 16px, 1.25, 0.03em);
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.form__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    width: 200px;
+    height: 50px;
+    @include font(700, 16px, 1.88, 0.06em);
+    color: var(--primary-btn-color);
+    background: #2196f3;
+    border-radius: 4px;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    &:hover {
+        background-color: var(--add-accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+.form__icontg {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+}

@@ -1,0 +1,26 @@
+.company {
+    display: flex;
+    justify-content: space-around;
+}
+.company__link {
+    align-items: center;
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    margin-left: auto;
+    &:hover {
+        border: 1px solid var(--accent-color);
+    }
+}
+.company__icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
+    fill: var(--icon-color);
+    .company__link:hover & {
+        fill: var(--accent-color);
+    }
+}
