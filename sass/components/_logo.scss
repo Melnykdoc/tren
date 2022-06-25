@@ -2,9 +2,7 @@
     font-family: 'Raleway', sans-serif;
     @include font(700, 26px, 1.19, null);
     color: var(--logo-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(color);
     & .link:focus,
     & .link:hover {
         color: var(--accent-color);

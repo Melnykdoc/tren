@@ -9,10 +9,8 @@
 }
 .social__link {
     display: flex;
-    width: 44px;
-    height: 44px;
+    @include size(44px, 44px, 50%);
     border: 1px;
-    border-radius: 50%;
     @include transition((background-color, fill));
     &:hover {
         border-radius: 50%;

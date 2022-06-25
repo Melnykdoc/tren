@@ -9,3 +9,8 @@
     transition-duration: $td;
     transition-timing-function: $ttf;
 }
+@mixin size($wh, $hg, $br) {
+    width: $wh;
+    height: $hg;
+    border-radius: $br;
+}
